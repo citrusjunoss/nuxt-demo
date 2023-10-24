@@ -1,0 +1,30 @@
+{
+  "name": "nuxt-demo",
+  "private": true,
+  "scripts": {
+    "dev": "HOST=0.0.0.0 nuxt dev --dotenv .env.dev",
+    "dev:test": "nuxt dev --dotenv .env.test",
+    "dev:pre": "nuxt dev --dotenv .env.pre",
+    "dev:prod": "nuxt dev --dotenv .env.production",
+    "build:dev": "nuxt build --dotenv .env.dev",
+    "build:test": "nuxt build --dotenv .env.test",
+    "build:pre": "nuxt build --dotenv .env.pre",
+    "build:prod": "nuxt build --dotenv .env.production",
+    "build": "nuxt build --dotenv .env.production.prod",
+    "start": "source .env.production.prod && node .output/server/index.mjs",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "engines": {
+    "node": ">=16.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "esbuild": "^0.18.9"
+  },
+  "dependencies": {
+    "nuxt": "^3.8.0",
+    "vue": "^3.3.4"
+  }
+}
